@@ -25,3 +25,20 @@ Write-Host("By using the for loop get the elements!!!")
 for($i = 0 ; $i -le ($list.Length -1) ; $i++){
   $list[$i]
 }
+
+
+Write-Host ("Using Foreach loop")
+foreach ($element in $list){
+$element
+}
+
+Write-Host("Using While Loop")
+$i = 0
+while($i -le 4){
+   $list[$i]
+   $i++
+}
+
+Write-Host 'Assigning values'
+$list[1] = 10
+$list
